@@ -90,11 +90,14 @@ a:hover{
   border-width: 1px;
   border: solid #000;
   border-width: 1px 1px;
+  display: block;
+  margin: 0 auto;
 }
 
 .img-game{
   display: block;
   margin: 0 auto;
+  width: 85%;
   border-width: 1px;
   border: solid #000;
   border-width: 1px 1px;
@@ -179,10 +182,36 @@ hr{
 }
 
 .contact-icon{
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   padding:3px;
   background-color: #000;
-  margin: 5px 5px 5px 5px;
+  margin: 0px 10px 0px 2px;
+  display: inline-block;
 }
 
+.contact-link{
+  vertical-align: super;
+  font-weight: bold;
+  color: #000;
+}
+
+.contact-icon-layout-container{
+  text-align: right;
+}
+
+.contact-icon-layout{
+  height: 26px;
+  width: 26px;
+  padding: 3px 4px 3px 4px;
+  background-color: #fff;
+  fill:#999;
+  margin: 1px 1px 1px 5px;
+  display: inline-block;
+}
+
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
