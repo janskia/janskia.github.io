@@ -86,7 +86,7 @@ a:hover{
 }
 
 .img-small{
-  width:400px;
+  max-width: 55%;
   border-width: 1px;
   border: solid #000;
   border-width: 1px 1px;
@@ -107,25 +107,23 @@ a:hover{
   width:220px;
   border: solid #000;
   border-width: 2px;
+  display: block;
+  margin: 0 auto;
 }
 
 .img-visual{
-  width: 268px;
+  width: 266px;
   border-width: 1px;
   border: solid #000;
   border-width: 1px 1px;
-  display: inline-block;
-  margin: 14px;
+  display: block;
+  margin: 14px auto;
 }
 
 .container-img-visual{
-  margin: 10px 56px;
-}
-
-.button-porting{
-  padding: 1px 1px;
-  width: 220px;
-  margin-top: 2px;
+  display: block;
+  margin: 12px auto!important;
+  width: 84.5%;
 }
 
 .col-porting{
@@ -166,13 +164,21 @@ a:hover{
   color: #000 !important;
   background-color: #fff;
   padding: 6px 50px;
-  font-weight: bold!important;
+  font-weight: bold;
   display: block;
   margin: 0 auto;
 }
 
 button:hover{
   background-color: #eee;
+}
+
+.button-porting{
+  padding: 1px 1px;
+  width: 220px;
+  margin-top: 2px;
+  margin-bottom: 18px;
+  font-weight: bold;
 }
 
 hr{
