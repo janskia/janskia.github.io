@@ -1,29 +1,49 @@
+@media (max-width: 768px) {
+  body{
+   padding:0px!important;
+  }
+}
+
+@media (min-width: 992px) {
+  .offset-left{
+    margin: 0px 60px 0px -87px!important
+  }
+}
+
 body {
   padding: 50px;
 
   /* font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto; */
   font: 14px "Work Sans", sans-serif;
-  font-family: "Work Sans", monospace!important;
+  font-family: "Work Sans", sans-serif!important;
   background-image:  url(../images/noise-2.png);
   opacity: 1;
 }
 
 p {  
   padding-top: 15px;
+  font-size:15px;
+}
+
+h1{
+  font-weight: 300!important;
 }
 
 h2{
-  border: solid #000;
-  border-width: 0px 0px 0px 18px;
+  border: solid #333;
+  border-width: 0px 0px 0px 4px;
   padding: 0px 0px 0px 7px;
   margin-left: -0px;
+  color: #000 !important;
+  font-size: 25px !important;
+  font-weight: 500 !important;
 }
 
 iframe{
   margin: 0 auto;
   display: block;
-  border: solid #000;
+  border: solid #999;
   border-width: 1px 1px;
 }
 
@@ -53,42 +73,65 @@ a:hover{
   list-style: none;
 }
 
-.navigation-link-selected{
-  list-style:square;
+.left-panel{
+  margin-top: 33px;
+  padding-right: 12px!important;
+  padding-left: 50px!important;
 }
 
 .navigation-link{
   text-align: right;
-  border: solid #fff;
-  border-width: 1px 2px;
-  padding: 3px;
-  background-color: #000;
-  color:#000;
+  border: solid #ddd;
+  border-width: 1px 1px;
+  padding: 3px 4.5px 3px 3px;
+  background-color: #00000009;
+  color: #ccc;
+  margin-right: -3px;
+  margin-bottom: 3px;
 }
 
 .navigation-link b{
-  color:#fff;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
 }
 
 .navigation-link b:hover{
-  color:#fff;
+  /* color:#fff; */
 }
 
 .navigation-link:hover{
- background-color: #445;
+ background-color: #00000010;
+}
+
+.navigation-link-selected{
+  /* list-style:square; */
+  border-width: 1px 8px 1px 1px;
+}
+
+.navigation-link-selected-marker{
+  border: solid #bbb;
+  border-width: 0px 0px 0px 2px;
+  display: inline;
+  position: relative;
+  left: 10px;
+  margin-left:-2px;
+  padding-top:-5px;
+  padding-bottom:-5px;
 }
 
 .content{
-  border: solid #000;
-  border-width: 0px 2px 0px 2px;
-  margin-top: 50px;
+  border: solid #bbb;
+  border-width: 0px 1px 0px 1px;
+  margin-top: 30px;
   padding: 10px 20px 210px 20px;
 }
 
 .img-small{
   max-width: 55%;
   border-width: 1px;
-  border: solid #000;
+  border: solid #999;
   border-width: 1px 1px;
   display: block;
   margin: 0 auto;
@@ -99,14 +142,14 @@ a:hover{
   margin: 0 auto;
   width: 85%;
   border-width: 1px;
-  border: solid #000;
+  border: solid #999;
   border-width: 1px 1px;
 }
 
 .img-porting{
   width:220px;
-  border: solid #000;
-  border-width: 2px;
+  border: solid #999;
+  border-width: 1px;
   display: block;
   margin: 0 auto;
 }
@@ -114,7 +157,7 @@ a:hover{
 .img-visual{
   width: 266px;
   border-width: 1px;
-  border: solid #000;
+  border: solid #999;
   border-width: 1px 1px;
   display: block;
   margin: 14px auto;
@@ -140,7 +183,7 @@ a:hover{
 .img-80{
   width:80%;
   border-width: 1px;
-  border: solid #000;
+  border: solid #999;
   border-width: 1px 1px;
   display: block;
   margin: 0 auto;
@@ -149,7 +192,7 @@ a:hover{
 .img-60{
   width: 60%;
   border-width: 1px;
-  border: solid #000;
+  border: solid #999;
   border-width: 1px 1px;
   display: block;
   margin: 0 auto;
@@ -162,11 +205,13 @@ a:hover{
 
 .button{
   color: #000 !important;
-  background-color: #fff;
+  background-color: #f8f8f8;
   padding: 6px 50px;
-  font-weight: bold;
+  font-weight: 600;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
+  border: solid #999;
+  border-width: 1px;
 }
 
 button:hover{
@@ -174,15 +219,14 @@ button:hover{
 }
 
 .button-porting{
-  padding: 1px 1px;
+  padding: 5px 1px;
   width: 220px;
-  margin-top: 2px;
+  margin-top: -1px;
   margin-bottom: 18px;
-  font-weight: bold;
 }
 
 hr{
-  border-top: 0px solid #000 !important;
+  border-top: 0px solid #999 !important;
   width: 6px;
   padding-bottom: 70px;
 }
@@ -204,6 +248,7 @@ hr{
 
 .contact-icon-layout-container{
   text-align: right;
+  margin-right: -5px;
 }
 
 .contact-icon-layout{
@@ -211,11 +256,14 @@ hr{
   width: 26px;
   padding: 3px 4px 3px 4px;
   background-color: #fff;
-  fill:#999;
+  fill:#aaa;
   margin: 1px 1px 1px 5px;
   display: inline-block;
 }
 
+.contact-icon-layout:hover{
+  fill:#999;
+}
 
 .sticky {
   position: sticky;
