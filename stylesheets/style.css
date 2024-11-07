@@ -24,6 +24,7 @@ body {
 p {  
   padding-top: 15px;
   font-size:15px;
+  color:#ddd;
 }
 
 h1{
@@ -31,11 +32,11 @@ h1{
 }
 
 h2{
-  border: solid #333;
+  border: solid #ddd;
   border-width: 0px 0px 0px 4px;
   padding: 0px 0px 0px 7px;
   margin-left: -0px;
-  color: #000 !important;
+  color: #eee !important;
   font-size: 25px !important;
   font-weight: 500 !important;
 }
@@ -43,7 +44,7 @@ h2{
 iframe{
   margin: 0 auto;
   display: block;
-  border: solid #999;
+  border: solid #151515;
   border-width: 1px 1px;
 }
 
@@ -52,14 +53,14 @@ iframe{
 }
 
 .title {
-  color: #000;
+  color: #eee;
   text-align: right;
   font-size: 40px;
   white-space: nowrap;
 }
 
 .title-2 {
-  color: #000;
+  color: #eee;
   text-align: left;
   font-size: 40px;
   white-space: nowrap;
@@ -77,41 +78,45 @@ a:hover{
   margin-top: 33px;
   padding-right: 12px!important;
   padding-left: 50px!important;
+  position: sticky!important;
+  top: 1rem;
 }
 
 .navigation-link{
   text-align: right;
-  border: solid #ddd;
-  border-width: 1px 1px;
+  border: solid #333;
+  border-width: 0px 0px 1px 0px;
   padding: 3px 4.5px 3px 3px;
-  background-color: #00000009;
-  color: #ccc;
+  background-color: #00000000;
+  color: #ddd;
   margin-right: -3px;
   margin-bottom: 3px;
+  margin-left: 130px;
 }
 
 .navigation-link b{
-  color: #000;
+  color: #ddd;
   font-weight: 500;
   letter-spacing: 0.5px;
 
 }
 
 .navigation-link b:hover{
-  /* color:#fff; */
+  /* color:#ddd; */
 }
 
 .navigation-link:hover{
- background-color: #00000010;
+ background-color: #ffffff14;
 }
 
 .navigation-link-selected{
   /* list-style:square; */
-  border-width: 1px 8px 1px 1px;
+  border: solid #ccc;
+  border-width: 0px 5px 1px 0px;
 }
 
 .navigation-link-selected-marker{
-  border: solid #bbb;
+  border: solid #ccc;
   border-width: 0px 0px 0px 2px;
   display: inline;
   position: relative;
@@ -122,16 +127,17 @@ a:hover{
 }
 
 .content{
-  border: solid #bbb;
-  border-width: 0px 1px 0px 1px;
+  /* border: solid #222;
+  border-width: 1px 1px 1px 1px; */
   margin-top: 30px;
-  padding: 10px 20px 210px 20px;
+  padding: 10px 20px 50px 20px;
+  background-color: #ffffff03;
 }
 
 .img-small{
   max-width: 55%;
   border-width: 1px;
-  border: solid #999;
+  border: solid #151515;
   border-width: 1px 1px;
   display: block;
   margin: 0 auto;
@@ -142,13 +148,13 @@ a:hover{
   margin: 0 auto;
   width: 85%;
   border-width: 1px;
-  border: solid #999;
+  border: solid #151515;
   border-width: 1px 1px;
 }
 
 .img-porting{
   width:220px;
-  border: solid #999;
+  border: solid #151515;
   border-width: 1px;
   display: block;
   margin: 0 auto;
@@ -157,7 +163,7 @@ a:hover{
 .img-visual{
   width: 266px;
   border-width: 1px;
-  border: solid #999;
+  border: solid #151515;
   border-width: 1px 1px;
   display: block;
   margin: 14px auto;
@@ -183,7 +189,7 @@ a:hover{
 .img-80{
   width:80%;
   border-width: 1px;
-  border: solid #999;
+  border: solid #151515;
   border-width: 1px 1px;
   display: block;
   margin: 0 auto;
@@ -192,7 +198,7 @@ a:hover{
 .img-60{
   width: 60%;
   border-width: 1px;
-  border: solid #999;
+  border: solid #151515;
   border-width: 1px 1px;
   display: block;
   margin: 0 auto;
@@ -204,18 +210,18 @@ a:hover{
 }
 
 .button{
-  color: #000 !important;
-  background-color: #f8f8f8;
+  color: #eee !important;
+  background-color: #151515;
   padding: 6px 50px;
   font-weight: 600;
   display: block;
   margin: 10px auto;
-  border: solid #999;
+  border: solid #333;
   border-width: 1px;
 }
 
 button:hover{
-  background-color: #eee;
+  background-color: #151515;
 }
 
 .button-porting{
@@ -226,9 +232,9 @@ button:hover{
 }
 
 hr{
-  border-top: 0px solid #999 !important;
+  border-top: 0px solid #151515 !important;
   width: 6px;
-  padding-bottom: 70px;
+  padding-bottom: 130px;
 }
 
 .contact-icon{
@@ -255,10 +261,10 @@ hr{
   height: 26px;
   width: 26px;
   padding: 3px 4px 3px 4px;
-  background-color: #fff;
   fill:#aaa;
   margin: 1px 1px 1px 5px;
   display: inline-block;
+  background-color: #0000;
 }
 
 .contact-icon-layout:hover{
