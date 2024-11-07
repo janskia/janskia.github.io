@@ -78,8 +78,13 @@ a:hover{
   margin-top: 33px;
   padding-right: 12px!important;
   padding-left: 50px!important;
-  position: sticky!important;
-  top: 1rem;
+}
+
+@media (min-width: 992px) {
+  .left-panel{
+    position: sticky!important;
+    top: 1rem;
+  }
 }
 
 .navigation-link{
