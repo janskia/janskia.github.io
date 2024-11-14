@@ -81,9 +81,9 @@ a:hover{
 }
 
 @media (min-width: 992px) {
-  .left-panel{
+  .sticky-navigation{
     position: sticky!important;
-    top: 1rem;
+    top: 2rem;
   }
 }
 
@@ -285,4 +285,15 @@ hr{
   color: #bbb;
   font-size: 12px;
   text-align: center;
+}
+
+@media (min-width: 992px) {
+  .aligned-row {
+    display: flex;
+    flex-flow: row wrap;
+
+    &::before {
+        display: block;
+    }
+  }
 }
