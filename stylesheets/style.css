@@ -23,28 +23,36 @@ body {
 
 p {  
   padding-top: 15px;
-  font-size:15px;
-  color:#ddd;
+  font-size: 15px;
 }
 
 h1{
-  font-weight: 300!important;
+  font-weight: 600!important;
 }
 
 h2{
-  border: solid #ddd;
-  border-width: 0px 0px 0px 4px;
+  color: #000!important;
+  border: solid #000;
+  border-width: 0px 0px 0px 18px;
   padding: 0px 0px 0px 7px;
   margin-left: -0px;
-  color: #eee !important;
   font-size: 25px !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
 }
 
+h3{
+  border: solid #000;
+  border-width: 0px 0px 0px 4px;
+  padding: 0px 0px 0px 7px;
+  margin-left: 0px;
+  color: #000 !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
 iframe{
   margin: 0 auto;
   display: block;
-  border: solid #151515;
+  border: solid #000;
   border-width: 1px 1px;
 }
 
@@ -53,14 +61,14 @@ iframe{
 }
 
 .title {
-  color: #eee;
+  color: #000;
   text-align: right;
   font-size: 40px;
   white-space: nowrap;
 }
 
 .title-2 {
-  color: #eee;
+  color: #000;
   text-align: left;
   font-size: 40px;
   white-space: nowrap;
@@ -75,7 +83,7 @@ a:hover{
 }
 
 .left-panel{
-  margin-top: 33px;
+  margin-top: 30px;
   padding-right: 12px!important;
   padding-left: 50px!important;
 }
@@ -89,60 +97,43 @@ a:hover{
 
 .navigation-link{
   text-align: right;
-  border: solid #333;
-  border-width: 0px 0px 1px 0px;
-  padding: 3px 4.5px 3px 3px;
-  background-color: #00000000;
-  color: #ddd;
-  margin-right: -3px;
-  margin-bottom: 3px;
-  margin-left: 130px;
+  border: solid #F0F0F0;
+  border-width: 1px 2px;
+  padding: 3px;
+  background-color: #000;
+  color:#000;
+  margin-left: 100px;
 }
 
 .navigation-link b{
-  color: #ddd;
   font-weight: 500;
   letter-spacing: 0.5px;
-
+  color:#F0F0F0;
 }
 
 .navigation-link b:hover{
-  /* color:#ddd; */
-}
-
-.navigation-link:hover{
- background-color: #ffffff14;
+  color:#F0F0F0;
 }
 
 .navigation-link-selected{
-  /* list-style:square; */
-  border: solid #ccc;
-  border-width: 0px 5px 1px 0px;
+  list-style:square;
 }
 
-.navigation-link-selected-marker{
-  border: solid #ccc;
-  border-width: 0px 0px 0px 2px;
-  display: inline;
-  position: relative;
-  left: 10px;
-  margin-left:-2px;
-  padding-top:-5px;
-  padding-bottom:-5px;
+.navigation-link:hover{
+ background-color: #333;
 }
 
 .content{
-  /* border: solid #222;
-  border-width: 1px 1px 1px 1px; */
+  border: solid #000;
+  border-width: 0px 3px 0px 3px;
   margin-top: 30px;
   padding: 10px 20px 50px 20px;
-  background-color: #ffffff03;
 }
 
 .img-small{
   max-width: 55%;
   border-width: 1px;
-  border: solid #151515;
+  border: solid #000;
   border-width: 1px 1px;
   display: block;
   margin: 0 auto;
@@ -153,14 +144,14 @@ a:hover{
   margin: 0 auto;
   width: 85%;
   border-width: 1px;
-  border: solid #151515;
+  border: solid #000;
   border-width: 1px 1px;
 }
 
 .img-porting{
   width:220px;
-  border: solid #151515;
-  border-width: 1px;
+  border: solid #000;
+  border-width: 2px;
   display: block;
   margin: 0 auto;
 }
@@ -168,7 +159,7 @@ a:hover{
 .img-visual{
   width: 266px;
   border-width: 1px;
-  border: solid #151515;
+  border: solid #000;
   border-width: 1px 1px;
   display: block;
   margin: 14px auto;
@@ -194,7 +185,7 @@ a:hover{
 .img-80{
   width:80%;
   border-width: 1px;
-  border: solid #151515;
+  border: solid #000;
   border-width: 1px 1px;
   display: block;
   margin: 0 auto;
@@ -203,7 +194,7 @@ a:hover{
 .img-60{
   width: 60%;
   border-width: 1px;
-  border: solid #151515;
+  border: solid #000;
   border-width: 1px 1px;
   display: block;
   margin: 0 auto;
@@ -215,31 +206,32 @@ a:hover{
 }
 
 .button{
-  color: #eee !important;
-  background-color: #151515;
+  color: #000 !important;
+  background-color: #fbfbfb;
   padding: 6px 50px;
   font-weight: 600;
   display: block;
   margin: 10px auto;
   border: solid #333;
-  border-width: 1px;
+  border-width: 2px;
 }
 
 button:hover{
-  background-color: #151515;
+  background-color: #fff;
 }
 
 .button-porting{
-  padding: 5px 1px;
+  padding: 1px 1px;
   width: 220px;
-  margin-top: -1px;
+  margin-top: 2px;
   margin-bottom: 18px;
+  font-weight: bold;
 }
 
 hr{
-  border-top: 0px solid #151515 !important;
+  border-top: 0px solid #000 !important;
   width: 6px;
-  padding-bottom: 130px;
+  padding-bottom: 30px;
 }
 
 .contact-icon{
@@ -260,20 +252,21 @@ hr{
 .contact-icon-layout-container{
   text-align: right;
   margin-right: -5px;
+  margin-top: 10px;
 }
 
 .contact-icon-layout{
   height: 26px;
   width: 26px;
   padding: 3px 4px 3px 4px;
-  fill:#aaa;
+  background-color: #0000;
+  fill:#888;
   margin: 1px 1px 1px 5px;
   display: inline-block;
-  background-color: #0000;
 }
 
 .contact-icon-layout:hover{
-  fill:#999;
+  fill:#9a9a9a;
 }
 
 .sticky {
@@ -282,7 +275,7 @@ hr{
 }
 
 .image-counter{
-  color: #bbb;
+  color: #222;
   font-size: 12px;
   text-align: center;
 }
