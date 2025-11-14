@@ -14,19 +14,45 @@
       padding: 0;
       height: 100%;
       overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       background-color: #1A1817;
     }
     canvas {
       display: block;
     }
+    #p5{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #click-tooltip{
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      padding: 5px 10px;
+      background: rgba(0,0,0,0);
+      color: rgba(255,255,255,0.80);
+      border-width: 10px;
+      border-color: rgba(255,255,255,0.10);
+      border-style: solid;
+      font-size: 15px;
+      font-family: "Consolas", sans-serif!important;
+    }
   </style>
 </head>
 
 <body>
+  <div id="click-tooltip">CLICK ANYWHERE</div>
+  <script>
+  var clickCount = 0;
+  document.addEventListener("click", function(event) {
+    clickCount++;
+    if (clickCount > 3){
+      document.getElementById("click-tooltip").style.display = "none";
+    }
+  });
+  </script>
   <script src="flowers.js"></script>
+  <div id="p5"></div>
 </body>
 </html>

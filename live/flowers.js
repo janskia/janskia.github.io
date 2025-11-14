@@ -29,7 +29,7 @@ function drawFlower(){
   numRotations *= random(0.4,1.7);
   numRotations = round(constrain(numRotations,3,250));
   clear();
-  createCanvas(windowWidth , windowHeight );
+  createCanvas(windowWidth , windowHeight).parent("p5");
   colorMode(HSB, 100);
   background(10, 10, 10, 255);
   drawShape();
