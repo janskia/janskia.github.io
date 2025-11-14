@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcs</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+    }
+    canvas {
+      display: block;
+    }
+    #p5{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #click-tooltip{
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      padding: 5px 10px;
+      background: rgba(0,0,0,0);
+      color: rgba(255,255,255,0.80);
+      border-width: 10px;
+      border-color: rgba(255,255,255,0.10);
+      border-style: solid;
+      font-size: 15px;
+      font-family: "Consolas", sans-serif!important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="click-tooltip">TAP ANYWHERE TO GENERATE</div>
+  <script>
+  var clickCount = 0;
+  document.addEventListener("click", function(event) {
+    //hide click tooltip
+    clickCount++;
+    if (clickCount > 3){
+      document.getElementById("click-tooltip").style.display = "none";
+    }
+    
+    //open fullscreen
+    var elem = document.documentElement;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  });
+  </script>
+  <script src="arcs.js"></script>
+  <div id="p5"></div>
+</body>
+</html>
