@@ -25,7 +25,7 @@ function mouseClicked(){
 
 function drawFlower(){
  // numRotations = round(pow(random(1,10), 2)+2);
-  numRotations *= random(0.4,1.7);
+  numRotations *= random(0.45,1.7);
   numRotations = round(constrain(numRotations,3,250));
   clear();
   createCanvas(windowWidth , windowHeight).parent("p5");
