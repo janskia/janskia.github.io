@@ -19,7 +19,7 @@ function setup() {
   drawFlower();
 }
 
-function mousePressed(){
+function mouseClicked(){
   openFullscreen();
   drawFlower();
 }
