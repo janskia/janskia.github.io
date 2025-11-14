@@ -30,7 +30,7 @@ function drawFlower(){
   clear();
   createCanvas(windowWidth , windowHeight).parent("p5");
   colorMode(HSB, 100);
-  background(10, 10, 10, 255);
+  background(0, 0, 0);
   drawShape();
   offset(1.2)
   drawShape();
