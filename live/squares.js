@@ -53,7 +53,7 @@ function mouseClicked(){
 function regenerate(){
   createCanvas(windowWidth, windowHeight).parent("p5");
   clear();
-  background(0,0,0);
+  background(10,10,10);
   currentGeneration = [];
   currentGeneration.push(new RectFract(width / 2, height / 2, 300, new Color(random(minColor, maxColor), random(minColor, maxColor), random(minColor, maxColor), a)));
   loopCount = 0;
