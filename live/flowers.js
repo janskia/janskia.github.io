@@ -20,6 +20,7 @@ function setup() {
 }
 
 function mousePressed(){
+  openFullscreen();
   drawFlower();
 }
 
@@ -69,4 +70,16 @@ function prepareShape(){
     arr.push([xOffset + random(xRandom), yOffset + random(yRandom)]);
   }
   return arr;
+}
+
+/* View in fullscreen */
+function openFullscreen() {
+  var elem = document.documentElement;
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
 }
