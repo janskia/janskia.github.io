@@ -25,9 +25,7 @@ var offsetYAddValue = 125;
 var currentGeneration = [];
 
 function setup(){
-    createCanvas(windowWidth, windowHeight);
-    background(0);
-    regenerate();
+  regenerate();
 }
 
 var loopCount = 0;
@@ -48,11 +46,12 @@ function draw(){
    }
 }
 
-function mousePressed(){
+function mouseClicked(){
   regenerate();
 }
 
 function regenerate(){
+  createCanvas(windowWidth, windowHeight).parent("p5");
   clear();
   background(10,10,10);
   currentGeneration = [];

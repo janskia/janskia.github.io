@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flowers</title>
 
-  <!-- Load p5.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
 
   <style>
@@ -42,13 +41,24 @@
 </head>
 
 <body>
-  <div id="click-tooltip">CLICK ANYWHERE</div>
+  <div id="click-tooltip">TAP ANYWHERE TO GENERATE</div>
   <script>
   var clickCount = 0;
   document.addEventListener("click", function(event) {
+    //hide click tooltip
     clickCount++;
     if (clickCount > 3){
       document.getElementById("click-tooltip").style.display = "none";
+    }
+    
+    //open fullscreen
+    var elem = document.documentElement;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
     }
   });
   </script>
